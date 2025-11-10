@@ -1,6 +1,6 @@
 # open_source_tools
 
-## Verilator Installtion:
+## Verilator Installation:
 
 ```
 sudo apt-get install verilator   # On Ubuntu
