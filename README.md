@@ -3,7 +3,7 @@
 ## Verilator Installation:
 
 * [All Installation Options](https://verilator.org/guide/latest/install.html)
-
+* Linux/Ubuntu-specific Installation Example:
 ```
 sudo apt-get install verilator   # On Ubuntu
 ```
