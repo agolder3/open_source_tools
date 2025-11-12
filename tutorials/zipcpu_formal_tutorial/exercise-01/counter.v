@@ -52,6 +52,13 @@ module	counter #(
 
 	reg	[15:0]	counter;
 
+	// Adding initial statement to initialize the counter
+	initial
+	begin
+		counter <= 16'd0;
+	end
+	// End Adding
+	
 	always @(posedge i_clk)
 	if ((i_start_signal)&&(counter == 0))
 		counter <= MAX_AMOUNT-1'b1;
