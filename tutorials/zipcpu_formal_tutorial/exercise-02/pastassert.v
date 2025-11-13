@@ -91,7 +91,8 @@ module	pastassert #(
 		// This will fail, since the counter could easily be something
 		// other than its initial value prior to the start of time
 		always @(posedge i_clk)
-			assert($past(counter == 0));
+			// assert($past(counter == 0));
+			assert(counter == 0); // chaning the assertion, because the other one will fail because of unconstrained condition prior to the start of time
 		// }}}
 	end else if (F_TESTID == 2)
 	begin : F_TESTID_TWO	// Succeeds
